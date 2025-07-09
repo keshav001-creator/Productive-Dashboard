@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenRoutine</title>
+    <link rel="icon" href="./android-chrome-512x512.png" type="image/x-icon">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="main">
+
+
+        <section class="allElems">
+            <nav class="nav-bar">
+
+                <div class="logo">
+                    <h1 class="zen-title">ZenRoutine</h1>
+                    <h4 class="zen-title-subtext">Your Calm, Productive Space</h4>
+                </div>
+
+                <div class="allFeatures">
+
+
+                    <div class="todo elem" id="0">
+                        <h1>To Do List</h1>
+                    </div>
+                    <div class="DailyPlanner elem" id="1">
+                        <h1>Daily Planner</h1>
+                    </div>
+                    <div class="Motivation elem" id="2">
+                        <h1>Motivation</h1>
+                    </div>
+                    <div class="Timer elem" id="3">
+                        <h1>Timer</h1>
+                    </div>
+
+                </div>
+                <div class="icon">
+                      <i class="ri-menu-3-line"></i>
+                </div>
+
+
+            </nav>
+
+            <header>
+                <div class="header1">
+
+                    <h1 class="date">23 June 2025</h1>
+                    <h2 class="day">Tuesday, 2:00pm</h2>
+                    <h3>Mumbai(Maharashtra)</h3>
+
+                </div>
+
+                <div class="header2">
+
+                    <h1>22°C</h1>
+                    <h2 class="condition">Light rain</h2>
+                    <h2 class="prec">Precipitation: 25%</h2>
+                    <h2 class="humidity">Humidity: 62%</h2>
+                    <h2 class="wind">Wind: 11 km/h</h2>
+                </div>
+
+            </header>
+
+
+        </section>
+
+        <section class="fullElem todo-fullPage">
+            <h1>Make Your Personalised Todo List</h1>
+            <div class="todoContainer">
+                <div class="addTask">
+                    <form>
+                        <input type="text" placeholder="Enter Your Task">
+                        <textarea type="text" placeholder="Task Description"></textarea>
+                        <div>
+                            <input type="checkbox" name="checkbox" id="CheckInp">
+                            <label for="checkbox" style="color: white;">Mark as Important</label>
+                        </div>
+                        <button>Create Task</button>
+                    </form>
+                </div>
+                <div class="viewTask">
+                    <!-- <div class="task">
+                    <h5>project1<span>imp</span></h5>
+                    <button>Mark as Completed</button>
+                </div> -->
+                </div>
+            </div>
+            <button class="btn " id="0">Close</button>
+        </section>
+        <section class="fullElem daily-planner-fullpage">
+            <h1>Daily Planner</h1>
+            <button class="btn " id="1">Close</button>
+
+            <div class="day-planner">
+                <div class="day-planner-time">
+                    <p>6:00</p>
+                    <input type="text" placeholder="...">
+                </div>
+
+
+                <div class="day-planner-time">
+                    <p>6:00</p>
+                    <input type="text" placeholder="...">
+                </div>
+
+
+            </div>
+        </section>
+        <section class="fullElem Motivation-fullpage">
+
+            <button class="btn " id="2">Close</button>
+            <div class="container">
+
+                <div class="wrapper">
+                    <div class="quote">Quotes for the Day</div>
+                    <div class="motivation"></div>
+                    <div class="author"></div>
+                </div>
+            </div>
+        </section>
+        <section class="fullElem pomodoro-timer">
+            <img src="https://studywithme.io/aesthetic-pomodoro-timer/c629a813b3561cfa40dd.jpg">
+            <button class="btn " id="3">Close</button>
+            <h1>Study with me!</h1>
+            <h1 class="session"></h1>
+            <div class="timer">
+                <h2>25:00</h2>
+                <div class="timer-buttons">
+                    <button class="start">Start</button>
+                    <button class="pause">Pause</button>
+                    <button class="reset">Reset</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,955 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+:root {
+    --pri: rgb(0, 0, 0);
+    --sec: #819A91;
+    --tri1: #A7C1A8;
+    --tri2: #EEEFE0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: var(--pri)
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #819A91;
+    background-image: url("./shanghai-aerial-view.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* dash board */
+.allElems {
+      background-color: rgba(0, 0, 0, 0.3)
+}
+.allElems .zen-title {
+    font-size: 5vw;
+    color: white;
+    letter-spacing: 1.0vw;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    /* font-family: 'Caveat', cursive;  */
+    font-weight: 300;
+}
+
+.zen-title-subtext {
+    font-size: 1.3vw;
+    color: rgba(255, 255, 255, 0.9);
+    /* text-align: center; */
+    margin-top: -0.6vw;
+    letter-spacing: 0.2vw;
+    font-style: italic;
+}
+
+
+.allElems {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+
+}
+
+.allElems header {
+    height: 28vw;
+    width: 100%;
+    padding: 5.5vw;
+    margin-bottom: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: last baseline;
+    -ms-flex-align: last baseline;
+    align-items: last baseline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.allElems header .header1 .day {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+    font-weight: 200;
+    margin-bottom: 1.2vw;
+}
+
+.allElems header .header1 .date {
+   font-size: 2.5vw;
+     font-weight: 200;
+     color: white;
+}
+
+.allElems header .header1 h3 {
+    font-weight: 200;
+    color: white;
+    font-size: 1.8vw;
+}
+
+
+.allElems header .header2 h1 {
+    color: white;
+    margin-bottom: -0.7vw;
+    font-size: 4.2vw;
+    font-weight: 200;
+}
+
+
+
+.allElems header .header2 h2 {
+    font-size: 1.1vw;
+    font-weight: 300;
+    color: white;
+}
+
+.allElems header .header2 .condition {
+    font-size: 2vw;
+    margin-bottom: 1.4vw;
+}
+
+section.allElems .allFeatures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 2vw;
+    -webkit-box-align: last baseline;
+        -ms-flex-align: last baseline;
+            align-items: last baseline;
+    padding-right: 1.5vw;
+    /* justify-content: space-around; */
+}
+
+section.allElems .nav-bar .icon .ri-menu-3-line{    
+    /* font-size: 1.7vw; */
+    display: none;
+    color: white;
+}
+
+
+.elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* align-items: last baseline; */
+    gap:0.3vw;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+.elem:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 0.2vh solid rgb(255, 255, 255,0.5);
+    padding: 1vw;
+}
+
+
+/* hr{
+    margin-top: 15px;
+    color: white;
+} */
+/* 
+.elem {
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    background: transparent;
+    
+    
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    color: white;
+    border: 2px solid white;
+} */
+/* 
+.elem:hover {
+    scale: 0.97;
+} */
+
+/* .elem {
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.elem h1 {
+    font-size: 1.6vw;
+    color:rgb(255, 255, 255);
+    font-weight: 300
+}
+
+.fullElem {
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    font-size: 60px;
+    display: none;
+    position: absolute;
+    background-color: var(--tri1);
+}
+
+
+.btn {
+    position: absolute;
+    background-color: var(--tri1);
+    right: 3%;
+    top: 3%;
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--sec);
+    font-weight: bold;
+
+}
+
+.btn:active {
+    scale: 0.97;
+}
+
+/* todolist */
+
+.todo-fullPage {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg");
+    background-size: cover;
+    overflow: auto;
+
+}
+
+.todo-fullPage button{
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 17px;
+    border: 2px solid black;
+}
+
+.todo-fullPage h1 {
+    font-size: 65px;
+    color: black;
+}
+
+
+.todo-fullPage .todoContainer {
+    height: 80%;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.todo-fullPage .todoContainer .addTask {
+
+    height: 100%;
+    width: 35%;
+    /* background-color: #A3B18A; */
+    border-radius: 10px;
+    background: rgba(41, 37, 37, 0.3);
+}
+
+.todo-fullPage .todoContainer .viewTask {
+    height: 100%;
+    width: 60%;
+    background-color:  #A3B18A;
+    border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(41, 37, 37, 0.3);
+    padding: 30px;
+    overflow: auto;
+}
+
+.todoContainer .addTask form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+
+}
+
+.todoContainer .addTask form input {
+    padding: 10px;
+    background-color: #FDF6EC;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.todoContainer .addTask form textarea {
+    padding: 10px;
+    background-color: #FDF6EC;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.todoContainer .addTask form button {
+    padding: 10px;
+    background-color: rgb(11, 128, 11);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+
+.todoContainer .addTask form button:active {
+    scale: 0.96;
+}
+
+
+.todoContainer .viewTask .task {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #FDF6EC;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.todoContainer .viewTask h5 {
+    font-size: 30px;
+    color:  black;
+}
+
+
+.todoContainer .viewTask button {
+    background-color: #fa0707;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.todoContainer .addTask form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+}
+
+.todoContainer .addTask form #CheckInp {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-right: 8px;
+    cursor: pointer;
+
+}
+
+.todoContainer .addTask form label {
+    font-size: 15px;
+}
+
+.todoContainer .viewTask span {
+    font-size: 8px;
+    margin-left: 7px;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.todoContainer .viewTask span.true {
+    opacity: 1;
+}
+
+.todoContainer .viewTask span.false {
+    opacity: 0;
+}
+
+/* .daily-planner-fullpage */
+
+
+.daily-planner-fullpage {
+    /* display: block; */
+    background-color: var(--tri2);
+    background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.daily-planner-fullpage h1 {
+    font-size: 60px;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.daily-planner-fullpage button{
+   background-color: white;
+   padding: 5px 10px;
+   border-radius: 20px;
+   
+   border: 2px solid black;
+}
+
+.daily-planner-fullpage .day-planner {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    background-color: #A3B18A;
+    border-radius: 10px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.day-planner .day-planner-time {
+    width: 49%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+}
+
+.day-planner .day-planner-time p {
+    position: absolute;
+    font-size: 13px;
+    left: 0.3%;
+    top: 0.1%;
+    color: #333333;
+}
+
+
+.day-planner .day-planner-time input {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color:  #F0EFEB;
+    margin-bottom: 15px;
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5)
+}
+
+
+/* motivation */
+
+
+.Motivation-fullpage {
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/736x/8c/35/d9/8c35d935461b16502639144748b87d98.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: top; */
+}
+
+.Motivation-fullpage button{
+    padding: 10px;
+    color: black;
+    background-color: #f6f8e7;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.Motivation-fullpage img {
+    display: block;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.Motivation-fullpage .container {
+    height: 300px;
+    width: 400px;
+    background-color: var(--tri2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+
+
+.Motivation-fullpage .container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #f6f8e7;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 8;
+    scale: 1.15;
+    opacity: 0.4;
+    /* filter: blur(50px); */
+}
+
+.Motivation-fullpage .container .wrapper {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f8e7;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.wrapper .quote {
+    font-size: 20px;
+    padding: 17px;
+    text-align: center;
+    background-color: rgb(225, 229, 209);
+    border-radius: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+.wrapper .motivation {
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(41, 40, 40);
+}
+
+
+.wrapper .author {
+
+    padding: 10px;
+    font-size: 17px;
+    text-align: right;
+    /* font-weight: 100; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color:rgb(225, 229, 209); */
+    /* border */
+}
+
+.wrapper img {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 5%;
+    bottom: 5%;
+    color: rgb(251, 230, 202);
+}
+
+
+
+/* pomodoro timer */
+
+
+
+.pomodoro-timer {
+    background-color: #f6f8e7;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pomodoro-timer .btn {
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.pomodoro-timer img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+}
+
+.pomodoro-timer h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-family: 'Caveat', cursive;
+}
+
+.pomodoro-timer .timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+
+.pomodoro-timer .session {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.pomodoro-timer .timer h2 {
+    font-size: 140px;
+    color: white;
+    font-weight: 600;
+    font-family: 'DM Mono', monospace;
+}
+
+
+.pomodoro-timer .timer .timer-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.timer .timer-buttons button {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.timer .timer-buttons button:hover {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+
+}
+
+
+
+@media (max-width: 480px) {
+.allElems{
+       background-color: rgba(0, 0, 0, 0.3);
+}
+  .nav-bar .zen-title{
+    font-size: 11vw;
+  }
+  .nav-bar .zen-title-subtext{
+    font-size: 4vw;
+  }
+
+  section.allElems .allFeatures{
+    display: none;
+  }
+
+  section.allElems .nav-bar .icon .ri-menu-3-line {
+    fill: white ;
+    display: block;
+    font-size: 7vw;
+    padding: 5vw;
+  }
+  
+  
+
+  .allElems header{
+    height:100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 10vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white; 
+    -ms-flex-pack: distribute; 
+        justify-content: space-around;
+  }
+
+
+  .allElems header .header1 .date{
+       font-size: 5vw;
+  }
+
+   .allElems header .header1 .day{
+    font-size: 5vw;
+   }
+   
+   .allElems header .header1 h3{
+    font-size: 5vw;
+   }
+   
+   .allElems header .header2{
+    margin-right: 10vw;
+   }
+   .allElems header .header2 h1{
+    font-size: 8vw;
+   }
+
+   .allElems header .header2 h2{
+    font-size: 5vw;
+    font-weight: 200;
+   }
+
+    .allElems header .header2 .condition{
+       font-size: 6vw
+    }
+}
+
+@media (min-width: 480px ) and (max-width:770px) {
+.allElems{
+       background-color: rgba(0, 0, 0, 0.3);
+}
+  
+  .nav-bar .zen-title{
+    font-size: 9vw;
+  }
+  .nav-bar .zen-title-subtext{
+    font-size: 3vw;
+  }
+
+  section.allElems .allFeatures{
+    display: none;
+  }
+
+  section.allElems .nav-bar .icon .ri-menu-3-line {
+    fill: white ;
+    display: block;
+    font-size: 6vw;
+    padding: 4vw;
+  }
+  
+ 
+
+  .allElems header{
+    height:50vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 4vw 2vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex;
+            flex-direction: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white; 
+    -ms-flex-pack: distribute; 
+        justify-content: space-around;
+  }
+
+
+  .allElems header .header1 .date{
+       font-size: 4vw;
+  }
+
+   .allElems header .header1 .day{
+    font-size: 4vw;
+   }
+   
+   .allElems header .header1 h3{
+    font-size: 3vw;
+   }
+   
+   .allElems header .header2 h1{
+    font-size: 6vw;
+   }
+
+   .allElems header .header2 h2{
+    font-size: 2vw;
+    font-weight: 200;
+   }
+
+    .allElems header .header2 .condition{
+       font-size: 2.5vw
+    }
+}
+
+
+
+@media (min-width: 769px ) and (max-width:1024px) {
+.allElems{
+     background-color:rgba(6, 5, 5, 0.2);
+     padding: 10px;
+}
+
+   
+  .nav-bar .zen-title{
+    font-size: 4vw;
+  }
+  .nav-bar .zen-title-subtext{
+    font-size: 1.5vw;
+  }
+
+  section.allElems .nav-bar .icon .ri-menu-3-line {
+    fill: white ;
+    /* display: block; */
+    font-size: 0px;
+    padding: 0px;
+  }
+  
+  .nav-bar{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .allElems header{
+    height:40vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 4vw 2vw ;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
+  }
+
+
+  .allElems header .header1 .date{
+       font-size: 3vw;
+  }
+
+   .allElems header .header1 .day{
+    font-size: 3vw;
+   }
+   
+   .allElems header .header1 h3{
+    font-size: 2vw;
+   }
+   
+   .allElems header .header2{
+    margin-right: 2vw;
+   }
+   .allElems header .header2 h1{
+    font-size: 4vw;
+   }
+
+   .allElems header .header2 h2{
+    font-size: 1.5vw;
+    font-weight: 200;
+   }
+
+    .allElems header .header2 .condition{
+       font-size: 2.5vw
+    }
+}
+
